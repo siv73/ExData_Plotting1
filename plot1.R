@@ -10,7 +10,7 @@ if(!file.exists(filename)){
 ##reading the data, can be read for specific columns using skip and nrows
 ##but i chose let the computer take that burden off of me
 household.powerdata <- read.table("household_power_consumption.txt", header = TRUE,
-                                  sep = ";", stringsAsFactors = FALSE) 
+                                  sep = ";", stringsAsFactors = FALSE, na.strings = "?") 
 
 ##converting the date column from character to date.
 household.powerdata$Date <- as.Date(household.powerdata$Date, "%d/%m/%Y")
