@@ -1,3 +1,4 @@
+## needs lubridate, please install before running this code.
 library(lubridate)
 ## Text file containing the data for plot
 filename <- "household_power_consumption.txt"
